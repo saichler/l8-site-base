@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{PAGE_TITLE}}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/sections.css">
+  <link rel="stylesheet" href="../css/illustrations.css">
+</head>
+<body>
+<nav>
+  <div class="container">
+    <a href="{{HOME_HREF}}" class="nav-logo">{{BRAND_NAME}}</a>
+    <ul class="nav-links">
+      {{NAV_LINKS}}
+    </ul>
+    <button class="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+{{PAGE_CONTENT}}
+
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <p>{{FOOTER_COPY}}</p>
+      <ul class="footer-links">
+        {{FOOTER_LINKS}}
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="../js/reveal.js"></script>
+<script src="../js/nav.js"></script>
+</body>
+</html>
